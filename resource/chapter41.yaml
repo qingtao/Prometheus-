@@ -1,0 +1,8 @@
+- job_name: 'docker'
+		static_configs:
+			- targets: ['138.197.26.39:8080']
+		metric_relabel_configs:
+			- source_labels: [__name__]
+				regex: '(container_tasks_state|container_memory_ffailures_total)'
+				action: drop
+

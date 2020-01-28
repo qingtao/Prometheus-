@@ -1,3 +1,5 @@
+## 第二章 安装和启动Prometheus
+
 ### 配置 Prometheus
 
 默认的配置包含global, alerting, rule_files和scrape_configs 4个yaml文件。
